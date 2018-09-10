@@ -13,6 +13,11 @@
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
     @include easeOut;
+
+    &:hover {
+      color: $primary-color;
+      background: $secondary-color;
+    }
   }
 
   // Rotate Into X With Menu Lines
