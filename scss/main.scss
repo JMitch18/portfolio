@@ -79,8 +79,8 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job3";
-  grid-template-columns: 1fr 1fr;
+    "job1 job2 job3";
+  grid-template-columns: 1fr 1fr 1fr;
 
   .bio-image {
     grid-area: bioimage;
