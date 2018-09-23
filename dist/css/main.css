@@ -264,11 +264,19 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .portrait {
+    background: url(../img/Jaron_small.jpg);
+    width: 150px;
+    height: 250px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr; }
+  .portrait {
+    background: url(../img/Jaron_small.jpg);
+    width: 150px;
+    height: 250px; } }
 
 @media screen and (max-width: 768px) {
   main {

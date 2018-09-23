@@ -3,12 +3,24 @@
   .projects {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .portrait {
+    background: url(../img/Jaron_small.jpg);
+    width: 150px;
+    height: 250px;
+  }
 }
 
 // Desktops & Laptops
 @include mediaLg {
   .projects {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .portrait {
+    background: url(../img/Jaron_small.jpg);
+    width: 150px;
+    height: 250px;
   }
 }
 
