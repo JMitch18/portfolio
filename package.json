@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Jaron's portfolio",
   "main": "index.js",
-  "homepage": "https://JMitch18.github.io/Jaron-s_portfolio",
+  "homepage": "https://JMitch18.github.io/portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
