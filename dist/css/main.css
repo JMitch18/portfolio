@@ -1,7 +1,7 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
+  right: 30px;
   top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
@@ -58,9 +58,12 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(/img/portrait.jpg);
+      background: url(/img/Jaron_big.jpg);
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #eece1a;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 1 !important; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -179,10 +182,28 @@ main {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    .about-info .job-3 .skill-boxes {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center; }
+      .about-info .job-3 .skill-boxes button {
+        border: none;
+        width: 25%;
+        height: 25px;
+        background: white;
+        color: #444;
+        margin: 1rem auto; }
+        .about-info .job-3 .skill-boxes button:hover {
+          background: #eece1a;
+          align-items: center !important;
+          transform: scale(1.5);
+          border: white 0.1px solid;
+          transition: all 0.5s ease-out; }
+
+.job {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: #eece1a 5px solid; }
 
 .projects {
   display: grid;
@@ -194,6 +215,8 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border-color: #eece1a;
+      padding: 0.1rem 0.1rem;
+      background: #eece1a;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -270,7 +293,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(/img/portrait_small.jpg);
+      background: url(/img/Jaron_small.jpg);
       width: 150px;
       height: 250px; }
   .about-info {

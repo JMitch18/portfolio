@@ -2,7 +2,7 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
+  right: 30px;
   top: 35px;
   cursor: pointer;
   @include easeOut;
@@ -96,9 +96,12 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url(/img/portrait.jpg);
+      background: url(/img/Jaron_big.jpg);
       border-radius: 50%;
       border: solid 3px $secondary-color;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 1 !important;
     }
   }
 

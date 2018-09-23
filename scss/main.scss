@@ -79,8 +79,8 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: 1fr 1fr 1fr;
+    "job1 job3";
+  grid-template-columns: 1fr 1fr;
 
   .bio-image {
     grid-area: bioimage;
@@ -102,13 +102,38 @@ main {
   }
   .job-3 {
     grid-area: job3;
-  }
 
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    .skill-boxes {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+      button {
+        border: none;
+        // border-radius: 100%;
+        width: 25%;
+        height: 25px;
+        background: white;
+        color: $primary-color;
+        margin: 1rem auto;
+
+        &:hover {
+          background: $secondary-color;
+          align-items: center !important;
+
+          transform: scale(1.5);
+          border: white 0.1px solid;
+          @include easeOut;
+        }
+      }
+    }
   }
+}
+
+.job {
+  background: lighten($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
 }
 
 // Work/Projects
@@ -124,6 +149,8 @@ main {
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
+      padding: 0.1rem 0.1rem;
+      background: $secondary-color;
       @include easeOut;
     }
   }
